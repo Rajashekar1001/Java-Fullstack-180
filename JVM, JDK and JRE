@@ -1,0 +1,64 @@
+# Day 001 - JVM, JDK and JRE
+
+## What is JDK?
+
+JDK (Java Development Kit) is used to develop Java applications.
+It contains:
+- JRE
+- Compiler (javac)
+- Debugging tools
+
+## What is JRE?
+
+JRE (Java Runtime Environment) is used to run Java programs.
+It contains:
+- JVM
+- Libraries
+
+## What is JVM?
+
+JVM (Java Virtual Machine) executes Java bytecode.
+Main responsibilities:
+- Executes bytecode
+- Memory management
+- Garbage Collection
+- Platform independence
+
+## Difference
+
+| JDK | JRE | JVM |
+|-----|-----|-----|
+| Develop + Run | Run | Execute Bytecode |
+| Includes JRE | Includes JVM | Part of JRE |
+
+## How Java Works
+
+
+Hello.java --javac--> Hello.class (bytecode) --JVM--> Output
+
+
+- Source code is compiled once into bytecode.
+- Bytecode runs on any OS that has a JVM (Write Once, Run Anywhere).
+
+## First Program
+
+java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java!");
+    }
+}
+
+
+bash
+javac Hello.java
+java Hello
+
+
+## Interview Questions
+1. Why is Java platform independent?
+2. Can we run Java without JDK? (Yes, with JRE, but we cannot compile.)
+
+## Practice
+- Install JDK, run java -version and javac -version.
+- Create your GitHub repo Java-365 and push Hello.java.
