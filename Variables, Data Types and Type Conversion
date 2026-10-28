@@ -1,0 +1,53 @@
+
+# Day 002 - Variables, Data Types and Type Conversion
+
+## Variables
+
+A variable is a named memory location that stores a value.
+
+java
+int age = 21;
+String name = "Karthik";
+
+
+## Primitive Data Types
+
+| Type | Size | Example |
+|------|------|---------|
+| byte | 1 byte | byte b = 10; |
+| short | 2 bytes | short s = 100; |
+| int | 4 bytes | int i = 1000; |
+| long | 8 bytes | long l = 100000L; |
+| float | 4 bytes | float f = 5.5f; |
+| double | 8 bytes | double d = 5.55; |
+| char | 2 bytes | char c = 'A'; |
+| boolean | 1 bit (JVM dependent) | boolean ok = true; |
+
+Non-primitive: String, Arrays, Classes, Interfaces.
+
+## Type Conversion
+
+*Implicit (widening)*: small to big, done automatically.
+java
+int a = 10;
+double b = a;   // 10.0
+
+
+*Explicit (narrowing)*: big to small, done manually, data may be lost.
+java
+double x = 9.78;
+int y = (int) x;   // 9
+
+
+Order: byte → short → int → long → float → double
+
+## Interview Questions
+1. Difference between primitive and non-primitive types?
+2. What is the default value of int, boolean and String?
+3. Why do we write L and f for long and float literals?
+
+## Practice
+- DataTypesDemo, TypeCastingDemo, TemperatureConverter (Celsius to Fahrenheit).
+
+---
+
