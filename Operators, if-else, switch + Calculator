@@ -1,0 +1,56 @@
+# Day 003 - Operators, if-else, switch + Calculator
+
+## Operators
+
+| Type | Operators |
+|------|-----------|
+| Arithmetic | + - * / % |
+| Relational | == != > < >= <= |
+| Logical | && \|\| ! |
+| Assignment | = += -= *= /= |
+| Unary | ++ -- |
+| Ternary | condition ? a : b |
+
+## if-else
+
+java
+if (marks >= 90) {
+    System.out.println("A");
+} else if (marks >= 75) {
+    System.out.println("B");
+} else {
+    System.out.println("C");
+}
+
+
+## switch
+
+java
+switch (op) {
+    case '+': result = a + b; break;
+    case '-': result = a - b; break;
+    default: System.out.println("Invalid");
+}
+
+Without break, execution falls through to the next case.
+
+## Project: Calculator
+
+- Input two numbers and an operator (+ - * /).
+- Use switch for the operation.
+- Handle divide by zero.
+
+java
+Scanner sc = new Scanner(System.in);
+double a = sc.nextDouble();
+char op = sc.next().charAt(0);
+double b = sc.nextDouble();
+
+
+## Interview Questions
+1. == vs equals()?
+2. What is fall-through in switch?
+3. Difference between i++ and ++i?
+
+## Practice
+- EvenOdd, LargestOfThree, LeapYear, then the Calculator project README with sample output.
