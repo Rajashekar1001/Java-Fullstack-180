@@ -1,0 +1,47 @@
+# Day 004 - Loops + Number Guessing Game
+
+## Loops
+
+| Loop | Use when |
+|------|----------|
+| for | Number of iterations is known |
+| while | Condition checked before running |
+| do-while | Must run at least once |
+
+java
+for (int i = 1; i <= 5; i++) { System.out.println(i); }
+
+int n = 5;
+while (n > 0) { n--; }
+
+do { System.out.println("Run once"); } while (false);
+
+
+## break and continue
+
+- break: exits the loop.
+- continue: skips the current iteration.
+
+## Nested Loop (Pattern)
+
+java
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) System.out.print("* ");
+    System.out.println();
+}
+
+
+## Project: Number Guessing Game
+
+- Computer picks a random number 1 to 100: new Random().nextInt(100) + 1.
+- User guesses until correct.
+- Show "Too high" or "Too low" and count attempts.
+
+## Interview Questions
+1. Difference between while and do-while?
+2. How do you create an infinite loop?
+
+## Practice
+- Factorial, Fibonacci, PrimeCheck, SumOfDigits, 5 star patterns.
+
+---
