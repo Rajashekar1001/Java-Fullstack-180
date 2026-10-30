@@ -1,0 +1,48 @@
+# Day 005 - ATM Project
+
+## Concepts Used
+- while loop for the menu
+- switch for choices
+- if-else for validation
+
+## Requirements
+
+1. Check Balance
+2. Deposit
+3. Withdraw (cannot exceed balance)
+4. Exit
+5. PIN check with 3 attempts
+
+## Flow
+
+
+Enter PIN (max 3 tries) -> Show Menu -> Choose option -> Repeat until Exit
+
+
+## Starter Code
+
+java
+int balance = 5000;
+int choice;
+do {
+    System.out.println("1.Balance 2.Deposit 3.Withdraw 4.Exit");
+    choice = sc.nextInt();
+    switch (choice) {
+        case 1: System.out.println("Balance: " + balance); break;
+        case 2: /* add amount */ break;
+        case 3: /* check balance first */ break;
+    }
+} while (choice != 4);
+
+
+## README Checklist
+- Description, features, how to run, sample output.
+
+## Interview Questions
+1. How would you prevent withdrawing more than the balance?
+2. Why use do-while for menus?
+
+## Practice
+- Add a mini statement that stores the last 5 transactions in an array.
+
+---
